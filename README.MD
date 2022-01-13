@@ -62,15 +62,4 @@ class Person {
 class Movie {
   // continue the code here
 }
-
-/** (Question 3): (1000 Points)
- * 1. Create a class `Actor` that inherits `Person`, and adds the following properties
- * - movies: array of `Movie`
- *
- * 2. Add the following methods
- * + addMovie(movie), that adds a movie to the actors movies
- * +
- */
-
-// write the class here
 ```

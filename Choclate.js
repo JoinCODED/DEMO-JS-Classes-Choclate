@@ -1,5 +1,5 @@
-class Choclate {
-  constructor(name, p, id, color, calories, ingridents) {
+class Chocolate {
+  constructor(name, p, id, color, calories, ingredients) {
     this.name = name;
     if (!isNaN(p)) {
       this.price = p;
@@ -9,40 +9,40 @@ class Choclate {
     this.id = id;
     this.color = color;
     this.calories = calories;
-    this.ingridents = ingridents;
+    this.ingredients = ingredients;
   }
 
   convertToUsd = () => {
     this.price = this.price * 0.3;
   };
 
-  printChoclatePretty = (username) => {
+  printChocolatePretty = (username) => {
     console.log(
       `the name is : ${this.name} and its price is ${this.price} and ${username} asked for it`
     );
   };
-  changeChoclateName = (newName) => {
+  changeChocolateName = (newName) => {
     this.name = newName;
   };
 
   searchForIngrediant = (ingridentName) => {
-    return this.ingridents.some((element) => element === ingridentName);
+    return this.ingredients.some((element) => element === ingridentName);
   };
 }
 
-const choclate1 = new Choclate("kitkat", "g", 1, "red", 100, [
+const chocolate1 = new Chocolate("kitkat", "g", 1, "red", 100, [
   "coco",
   "milk",
   "biscut",
 ]);
-const choclat2 = new Choclate("snickersPro", 10.0, 2, "blue", 300, [
+const choclat2 = new Chocolate("snickersPro", 10.0, 2, "blue", 300, [
   "penuts",
   "caremel",
 ]);
 
-console.log(choclate1.searchForIngrediant("coco"));
-// choclate1.convertToUsd();
+console.log(chocolate1.searchForIngrediant("coco"));
+// chocolate1.convertToUsd();
 // choclat2.convertToUsd();
-// choclate1.changeChoclateName("new kitkat");
-// console.log(choclate1);
-//choclate1.printChoclatePretty("Zainab");
+// chocolate1.changeChocolateName("new kitkat");
+// console.log(chocolate1);
+//chocolate1.printChocolatePretty("Zainab");

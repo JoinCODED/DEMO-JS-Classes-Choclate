@@ -10,7 +10,7 @@ class Person {
   // 2. Add to the class properties.
   // 3. give the properties initial values
   age = 0;
-  name = "";
+  name = '';
 }
 ```
 

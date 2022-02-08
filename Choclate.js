@@ -4,7 +4,7 @@ class Chocolate {
     if (!isNaN(p)) {
       this.price = p;
     } else {
-      this.price = "Invalid price";
+      this.price = 'Invalid price';
     }
     this.id = id;
     this.color = color;
@@ -30,19 +30,19 @@ class Chocolate {
   };
 }
 
-const chocolate1 = new Chocolate("kitkat", "g", 1, "red", 100, [
-  "coco",
-  "milk",
-  "biscut",
+const chocolate1 = new Chocolate('kitkat', 'g', 1, 'red', 100, [
+  'coco',
+  'milk',
+  'biscut',
 ]);
-const choclat2 = new Chocolate("snickersPro", 10.0, 2, "blue", 300, [
-  "penuts",
-  "caremel",
+const chocolate2 = new Chocolate('snickersPro', 10.0, 2, 'blue', 300, [
+  'penuts',
+  'caremel',
 ]);
 
-console.log(chocolate1.searchForIngrediant("coco"));
+console.log(chocolate1.searchForIngrediant('coco'));
 // chocolate1.convertToUsd();
-// choclat2.convertToUsd();
+// chocolate2.convertToUsd();
 // chocolate1.changeChocolateName("new kitkat");
 // console.log(chocolate1);
 //chocolate1.printChocolatePretty("Zainab");
